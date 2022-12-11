@@ -5,7 +5,7 @@ const path = require('path')
 const app = express();
 
 const mydotenv = require('dotenv').config();
-console.log(mydotenv);
+console.log("env" + mydotenv);
 console.log("env logging:" + process.env.PORT);
 
 app.use(express.static(path.join(__dirname, 'public')))
