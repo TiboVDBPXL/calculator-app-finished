@@ -1,3 +1,5 @@
+require('dotenv').config()
+console.log("env logging:" + process.env.PORT)
 const express = require('express');
 const routes = require('./routes');
 const path = require('path')
